@@ -52,7 +52,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Innovation\\EightHrm\\": "package/eight_hrm/src/"
         }
     },
     "minimum-stability": "dev",
