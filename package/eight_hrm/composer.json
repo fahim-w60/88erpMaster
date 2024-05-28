@@ -1,0 +1,19 @@
+{
+    "name": "Innovation/EightHrm",
+    "description": "This will send email to admin,save to database",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Innovation\\EightHrm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "farhadali0507",
+            "email": "farhadali0507@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
