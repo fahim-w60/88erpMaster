@@ -90,7 +90,76 @@ function selected__purchase_type($id){
     return 1;
 }
 
+/*
+    HRM MS SQL Database Connection String
+*/
+if (! function_exists('hrm_connection')) {
+    function hrm_connection()
+    {
+        $serverName = "localhost"; // or your SQL Server name
+        $connectionInfo = array( "Database"=>"ad","UID"=>"sa", "PWD"=>"admin@1234");
+        // Establishes the connection
+        $conn = sqlsrv_connect($serverName, $connectionInfo);
+        if ($conn === false) {
+            die(print_r(sqlsrv_errors(), true));
+        }
 
+        return  $conn;
+    }
+}
+
+function getFirstAndLastDayOfMonth($month, $year) {
+    // Create a DateTime object for the first day of the month
+    $firstDay = new DateTime("$year-$month-01");
+    
+    // Get the last day of the month
+    $lastDay = clone $firstDay;
+    $lastDay->modify('last day of this month');
+    
+    return array(
+        'first_day' => $firstDay->format('Y-m-d'),
+        'last_day' => $lastDay->format('Y-m-d')
+    );
+}
+
+function company_name() {
+    return "SAIF POWER GROUP";
+}
+function company_address() {
+    return "72, Mohakhali C/A, (8th Floor), Rupayan Center, Dhaka-1212, Bangladesh";
+}
+
+function minutesToHours($minutes) {
+    $hours = floor($minutes / 60); // Get the whole number of hours
+    $remainingMinutes = $minutes % 60; // Get the remaining minutes
+
+    // Format the result
+    $result = sprintf('%02d:%02d', $hours, $remainingMinutes);
+    if($result=='00:00'){
+        return '';
+    }
+    return $result;
+}
+
+
+function check_empty_time($_time){
+    if($_time =='00:00:00 am'){
+        return '';
+    }
+    return $_time;
+}
+
+function check_adt_status($_adt){
+    if($_adt =='WO'){
+        return '<span class="wo_color">'.$_adt.'</span>';
+    }elseif($_adt =='P'){
+        return '<span class="p_color">'.$_adt.'</span>';
+    }elseif($_adt =='L'){
+        return '<span class="l_color">'.$_adt.'</span>';
+    }
+
+    return $_adt;
+}
 
 //RLP Database Connection
 if (! function_exists('create_update_user')) {

@@ -50,5 +50,7 @@
 <script src="{{ asset('vendor/eight_hrm/dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('vendor/eight_hrm/dist/js/demo.js')}}"></script>
+<script src="{{ asset('vendor/eight_hrm/js/ajax.js')}}"></script>
+@yield('script')
 </body>
 </html>

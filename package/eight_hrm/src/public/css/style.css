@@ -1,0 +1,58 @@
+ body {
+                font-size: 9pt;
+                color: #000000;
+                font-family: Tahoma;
+                font-weight: normal;
+            }
+            .report_top_header{
+                text-align: center;
+            }
+            th{
+                background: #FFBF80;
+                border:1px solid #000;
+                font-size: 9pt;
+                color: #000000;
+                font-family: Tahoma;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .wo_color{
+                color: green;
+            }
+            body>td{
+                text-align: center;
+            }
+            .p_color{
+                color: #000080;
+            }
+            .l_color{
+                color: red;
+            }
+            .antialiased{
+               padding-bottom: 100px;
+            }
+            .company_title{
+                    font-size: 12pt;
+                    color: #000000;
+                    font-family: Arial;
+                    font-weight: bold;
+            }
+            .header_address{
+                    font-size: 9pt;
+                    color: #000000;
+                    font-family: Arial;
+                    font-weight: normal;
+            }
+            .header_report_name{
+                    font-size: 10pt;
+                    color: #000000;
+                    font-family: Tahoma;
+                    font-weight: bold;
+            }
+            .normal_text{
+                font-size: 9pt;
+                color: #000000;
+                font-family: Tahoma;
+                font-weight: normal;
+            }
