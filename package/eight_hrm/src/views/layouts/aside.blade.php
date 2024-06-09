@@ -8,17 +8,17 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="{{ asset('vendor/eight_hrm/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
         </div>
-      </div>
+      </div> --}}
 
       <!-- SidebarSearch Form -->
-      <div class="form-inline">
+      {{-- <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
           <div class="input-group-append">
@@ -27,7 +27,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -42,7 +42,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            {{-- <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="../../index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -50,10 +50,10 @@
                 </a>
               </li>
               
-            </ul>
+            </ul> --}}
           </li>
           
-          
+{{--           
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -88,7 +88,7 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
           
          
         
@@ -96,7 +96,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Extras
+                Attendance Management
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -105,33 +105,39 @@
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>
-                    Login & Register v1
+                    Attendance Reports
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../examples/login.html" class="nav-link">
+                    <a href="{{ route('attendance.daily_attendance') }}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Login v1</p>
+                      <p>Daily Attendance</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="../examples/register.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Register v1</p>
+                      <p>Monthly Attendance</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="../examples/forgot-password.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v1</p>
+                      <p>Summary Attendance</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="../examples/recover-password.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v1</p>
+                      <p>Job Card</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../examples/recover-password.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Employee punch record and movement Reg</p>
                     </a>
                   </li>
                 </ul>
@@ -140,7 +146,7 @@
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>
-                    Login & Register v2
+                    Attendance Setup
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
@@ -148,30 +154,30 @@
                   <li class="nav-item">
                     <a href="../examples/login-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Login v2</p>
+                      <p>blank</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="../examples/register-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Register v2</p>
+                      <p>Blank</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="../examples/forgot-password-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v2</p>
+                      <p>Blank</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="../examples/recover-password-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v2</p>
+                      <p>Blank</p>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lockscreen</p>
@@ -218,7 +224,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Starter Page</p>
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </li>
          
