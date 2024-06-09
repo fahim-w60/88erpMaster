@@ -31,34 +31,13 @@
           <div class="col-md-4">
             <div class="card">
               <div class="card-body">
-              	<ul>
-              		<li><a href="{{route('payment_slip_report')}}" class="card-link">Payment Slip Report</a></li>
-              		<li><a href="#" class="card-link">Monthly Income TAX Report</a></li>
-              		<li><a href="#" class="card-link">Payment Slip Cumulative Report</a></li>
-              		<li><a href="#" class="card-link">Leave Details Report</a></li>
-              		<li><a href="#" class="card-link">Appraisal Details Report</a></li>
-              		<li><a href="#" class="card-link">Loan / Advance Details Report</a></li>
-              		<li><a href="#" class="card-link">Jobcard / Movement Report</a></li>
-              		<li><a href="#" class="card-link">Monthwise Payment Report</a></li>
-              		<li><a href="#" class="card-link">Event Calendar</a></li>
-              	</ul>
+              	 @include('eight_hrm::reports.user_reports.filter_pages.reports_link')
                 
                 
               </div>
             </div>
 
-            <div class="card card-primary card-outline">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's
-                  content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div><!-- /.card -->
+            
           </div>
           <!-- /.col-md-6 -->
           
