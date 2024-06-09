@@ -48,13 +48,13 @@ class CreateUsersTable extends Migration
             'password' => bcrypt('admin@1234')
         ]);
   
-        $role = Role::create(['name' => 'SA']);
+        // $role = Role::create(['name' => 'SA']);
    
-        $permissions = Permission::pluck('id','id')->all();
+        // $permissions = Permission::pluck('id','id')->all();
   
-        $role->syncPermissions($permissions);
+        // $role->syncPermissions($permissions);
    
-        $user->assignRole([$role->id]);
+        // $user->assignRole([$role->id]);
     }
 
     /**

@@ -23,7 +23,7 @@ class CreateStoreHousesTable extends Migration
         });
 
         \DB::table('store_houses')->insert([
-            array('_code' => 'store-1','_name' => 'Store Name','_status' => 1),
+            array('_code' => 'store-1','_name' => 'Store Name','_status' => 1,'_branch_id'=>1),
             ]
         );
     }
