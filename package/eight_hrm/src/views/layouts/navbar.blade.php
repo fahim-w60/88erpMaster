@@ -55,7 +55,7 @@
         </ul>
 
         <!-- SEARCH FORM -->
-        <form class="form-inline ml-0 ml-md-3">
+        {{-- <form class="form-inline ml-0 ml-md-3">
           <div class="input-group input-group-sm">
             <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
             <div class="input-group-append">
@@ -64,11 +64,11 @@
               </button>
             </div>
           </div>
-        </form>
+        </form> --}}
       </div>
 
       <!-- Right navbar links -->
-      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+      {{-- <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
@@ -159,6 +159,6 @@
             <i class="fas fa-th-large"></i>
           </a>
         </li>
-      </ul>
+      </ul> --}}
     </div>
   </nav>

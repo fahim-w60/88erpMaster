@@ -26,7 +26,7 @@ class CreateCompaniesTable extends Migration
         });
 
         \DB::table('companies')->insert([
-            array('_code' => 'code-1','_name' => 'company Name','_status' => 1),
+            array('_code' => 'code-1','_name' => 'company Name','_status' => 1,'_user'=>1),
             ]
         );
     }
