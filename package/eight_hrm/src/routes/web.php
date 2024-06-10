@@ -11,9 +11,7 @@ Route::group(['prefix' => 'hrm'], function () {
     Route::get('user_job_card', [UserReportController::class,'user_job_card'])->name('user_job_card');
     Route::get('user_report', [UserReportController::class,'user_report'])->name('hrm_user_report');
     
+    
 });
-
-
-
 
 
