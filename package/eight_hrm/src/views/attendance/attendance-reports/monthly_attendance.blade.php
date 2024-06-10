@@ -28,11 +28,9 @@
     <div class="content">
       <div class="container">
         <div class="card">
-            <div class="card-header text-center bg-primary text-white">
-              Monthly Attendance Report
-            </div>
+            
             <div class="card-body d-flex justify-content-center">
-                <div class="w-50">
+                <div>
                     <table>
                         <tr>
                             <td class="text-right"> <label>Select Report</label></td>
