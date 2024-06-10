@@ -32,27 +32,45 @@
               Daily Attendance Report
             </div>
             <div class="card-body d-flex justify-content-center">
-                <div class="w-80">
+                <div class="w-60">
+                    <table>
+                        
+                            <tr>
+                                <td> <label class="text-right">Select Report</label></td>
+                                <td> <select class="form-select" name="attendance_type" id="attendance_type">
+                                    <option value="option1">Daily Attendance (Include OT)</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                
+                                    <td><label for="" class="text-right">From Date</label></td>
+                                    <td><input class="form-control" type="date" name="attendance_start_date" id="attendance_start_date"></td>
+                                
+                            </tr>
+                            <tr>
+                               <td> <label for="" class="text-right">To Date</label> </td>
+                                <td><input class="form-control" type="date" name="attendance_end_date" id="attendance_end_date"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="" class="text-right">Employee Category</label></td>
+                                <td><input name="form-control" type="text" name="employee_category" id="employee_category"></td>
+                                <td><button class="btn btn-sm btn-primary">help</button></td>
+                            </tr>
+                            <tr>
+                                
+                            </tr>
+                     
+                        
+                    </table>
+                    
+                    {{-- 
                     <div class="mb-3">
-                        <label>Select Report</label>
-                        <select class="form-select" name="attendance_type" id="attendance_type">
-                            <option value="option1">Daily Attendance (Include OT)</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </select>
+                        
                     </div>
                     <div class="mb-3">
-                        <label for="">From Date</label>
-                        <input type="date" name="attendance_start_date" id="attendance_start_date">
-                    </div>
-                    <div class="mb-3">
-                        <label for="">To Date</label>
-                        <input type="date" name="attendance_end_date" id="attendance_end_date">
-                    </div>
-                    <div class="mb-3">
-                        <label for="">Employee Category</label>
-                        <input type="text" name="employee_category" id="employee_category">
-                        <button class="btn btn-sm btn-primary">help</button>
+                       
                     </div>
                     <div class="mb-3">
                         <label for="">Department</label>
@@ -159,7 +177,7 @@
                     <hr style="border-top: 2px solid #007bff;">
                     <div class="mb-3 text-center">
                         <button class="btn btn-sm btn-primary">Show Report</button>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
           </div>
