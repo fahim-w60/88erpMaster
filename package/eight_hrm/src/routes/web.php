@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Innovation\EightHrm\Http\Controllers\HrmDashBoardController;
 use Innovation\EightHrm\Http\Controllers\UserReportController;
 use Innovation\EightHrm\Http\Controllers\attendance\AttendanceReportController;
+use Innovation\EightHrm\Http\Controllers\employee\EmployeeInfoController;
 
 Route::group(['prefix' => 'hrm'], function () {
     Route::get('dashboard', [HrmDashBoardController::class,'index'])->name('hrm-dashboard');
@@ -17,6 +18,8 @@ Route::group(['prefix' => 'hrm'], function () {
     //Attendance Controller
     //Route::resource('attendance', AttendanceReportController::class);
     Route::get('daily-attendance', [AttendanceReportController::class, 'daily_attendance'])->name('attendance.daily_attendance');
+
+    Route::resource('employee', EmployeeInfoController::class);
 
 
 });
