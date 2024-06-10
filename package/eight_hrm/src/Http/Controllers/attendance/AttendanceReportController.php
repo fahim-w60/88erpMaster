@@ -87,4 +87,20 @@ class AttendanceReportController extends Controller
     {
         return view('eight_hrm::attendance.attendance-reports.daily-attendance');
     }
+    public function monthly_attendance()
+    {
+        return view('eight_hrm::attendance.attendance-reports.monthly_attendance');
+    }
+    public function summary_attendance()
+    {
+        return view('eight_hrm::attendance.attendance-reports.summary_attendance');
+    }
+    public function job_card()
+    {
+        return view('eight_hrm::attendance.attendance-reports.job_card');
+    }
+    public function punch_record()
+    {
+        return view('eight_hrm::attendance.attendance-reports.punch_record');
+    }
 }

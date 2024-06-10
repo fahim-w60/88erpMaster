@@ -1,8 +1,8 @@
 <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
       <a href="{{url('/')}}" class="navbar-brand">
-        <img src="{{ asset('vendor/eight_hrm/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <img src="{{ asset('/logo/logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-bold">Saif Erp</span>
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,22 +20,20 @@
           </li>
           
           <li class="nav-item dropdown">
-            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Attendance Management</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-              <li><a href="#" class="dropdown-item">Some action </a></li>
-              <li><a href="#" class="dropdown-item">Some other action</a></li>
+             
 
-              <li class="dropdown-divider"></li>
-
+             
               <!-- Level two dropdown-->
               <li class="dropdown-submenu dropdown-hover">
-                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Attendance Reports</a>
                 <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
                   <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                    <a tabindex="-1" href="{{route('attendance.daily_attendance')}}" class="dropdown-item">Daily Attendance</a>
                   </li>
 
-                  <!-- Level three dropdown-->
+                  {{-- <!-- Level three dropdown-->
                   <li class="dropdown-submenu">
                     <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
                     <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
@@ -43,13 +41,39 @@
                       <li><a href="#" class="dropdown-item">3rd level</a></li>
                     </ul>
                   </li>
-                  <!-- End Level three -->
+                  <!-- End Level three --> --}}
 
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
+                  <li><a href="{{route('attendance.monthly_attendance')}}" class="dropdown-item">Monthly Attendance</a></li>
+                  <li><a href="{{route('attendance.summary_attendance')}}" class="dropdown-item">Summary Attendance</a></li>
+                  <li><a href="{{route('attendance.job_card')}}" class="dropdown-item">Job Card</a></li>
+                  <li><a href="{{route('attendance.punch_record')}}" class="dropdown-item">Employee Punch Record And Movement Reg</a></li>
                 </ul>
               </li>
               <!-- End Level two -->
+
+              <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Attendance Setup</a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Blank</a>
+                  </li>
+
+                  {{-- <!-- Level three dropdown-->
+                  <li class="dropdown-submenu">
+                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                      <li><a href="#" class="dropdown-item">3rd level</a></li>
+                      <li><a href="#" class="dropdown-item">3rd level</a></li>
+                    </ul>
+                  </li>
+                  <!-- End Level three --> --}}
+
+                  <li><a href="#" class="dropdown-item">Blank</a></li>
+                  <li><a href="#" class="dropdown-item">Blank</a></li>
+                  <li><a href="#" class="dropdown-item">Blank</a></li>
+                  <li><a href="#" class="dropdown-item">Blank</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
