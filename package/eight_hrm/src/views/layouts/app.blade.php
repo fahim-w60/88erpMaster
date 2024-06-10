@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="{{ asset('vendor/eight_hrm/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('vendor/eight_hrm/dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body class="hold-transition sidebar-collapse layout-top-nav">
 <div class="wrapper">
@@ -51,6 +52,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('vendor/eight_hrm/dist/js/demo.js')}}"></script>
 <script src="{{ asset('vendor/eight_hrm/js/ajax.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 @yield('script')
 </body>
 </html>

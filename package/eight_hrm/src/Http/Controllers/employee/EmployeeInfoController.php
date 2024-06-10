@@ -1,11 +1,11 @@
 <?php
 
-namespace Innovation\EightHrm\Http\Controllers\attendance;
+namespace Innovation\EightHrm\Http\Controllers\employee;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AttendanceReportController extends Controller
+class EmployeeInfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AttendanceReportController extends Controller
      */
     public function index()
     {
-        
+       return view('eight_hrm::employee/index');
     }
 
     /**
@@ -24,7 +24,7 @@ class AttendanceReportController extends Controller
      */
     public function create()
     {
-        //
+         return view('eight_hrm::employee/create');
     }
 
     /**
@@ -81,26 +81,5 @@ class AttendanceReportController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function daily_attendance()
-    {
-        return view('eight_hrm::attendance.attendance-reports.daily-attendance');
-    }
-    public function monthly_attendance()
-    {
-        return view('eight_hrm::attendance.attendance-reports.monthly_attendance');
-    }
-    public function summary_attendance()
-    {
-        return view('eight_hrm::attendance.attendance-reports.summary_attendance');
-    }
-    public function job_card()
-    {
-        return view('eight_hrm::attendance.attendance-reports.job_card');
-    }
-    public function punch_record()
-    {
-        return view('eight_hrm::attendance.attendance-reports.punch_record');
     }
 }

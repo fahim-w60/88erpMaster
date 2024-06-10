@@ -1,8 +1,10 @@
  <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{url('/')}}" class="brand-link">
-      <img src="{{ asset('vendor/eight_hrm/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+
+      <img src="{{ asset('logo/logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-bold">Saif Erp</span>
+
     </a>
 
     <!-- Sidebar -->
@@ -117,25 +119,25 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/register.html" class="nav-link">
+                    <a href="{{route('attendance.monthly_attendance')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Monthly Attendance</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/forgot-password.html" class="nav-link">
+                    <a href="{{route('attendance.summary_attendance')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Summary Attendance</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/recover-password.html" class="nav-link">
+                    <a href="{{route('attendance.job_card')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Job Card</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/recover-password.html" class="nav-link">
+                    <a href="{{route('attendance.punch_record')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Employee punch record and movement Reg</p>
                     </a>
