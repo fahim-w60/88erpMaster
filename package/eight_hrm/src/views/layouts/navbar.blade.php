@@ -56,9 +56,7 @@
               <li class="dropdown-submenu dropdown-hover">
                 <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Attendance Setup</a>
                 <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Blank</a>
-                  </li>
+                  
 
                   {{-- <!-- Level three dropdown-->
                   <li class="dropdown-submenu">
@@ -70,10 +68,14 @@
                   </li>
                   <!-- End Level three --> --}}
 
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
+                  <li><a href="{{route('attendance.attendance_lock')}}" class="dropdown-item">Monthly Attendance Lock</a></li>
+                  <li><a href="{{route('attendance.attendance_unlock')}}" class="dropdown-item">Monthly Attendance Unlock</a></li>
+                  <li><a href="{{route('attendance.shift_time_setting')}}" class="dropdown-item">Shift Time Setting</a></li>
+                  <li><a href="{{route('attendance.employee_wise_time_setting')}}" class="dropdown-item">Employee Wise Time Setting</a></li>
+                  <li><a href="{{route('attendance.roaster_sheet_generate')}}" class="dropdown-item">Roaster Sheet Generate Process</a></li>
+                  <li><a href="{{route('attendance.group_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Group</a></li>
+                  <li><a href="{{route('attendance.employee_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Employee</a></li>
+                  <li><a href="{{route('attendance.roster_excel_upload')}}" class="dropdown-item">Roaster Upload From Excel</a></li>
                 </ul>
               </li>
             </ul>

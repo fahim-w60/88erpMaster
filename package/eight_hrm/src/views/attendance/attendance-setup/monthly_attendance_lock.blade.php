@@ -34,7 +34,7 @@
                         Attendance Lock(Monthly)
                     </div>
                     <div class="card-body justify-content-center">
-                        <table class="table">
+                        <table>
                             <tbody>
                                 <tr>
                                     <td class="text-right"><label for="year">Year</label></td>
