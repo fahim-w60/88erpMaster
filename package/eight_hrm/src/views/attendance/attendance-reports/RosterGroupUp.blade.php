@@ -28,16 +28,16 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-6 col-md-12">
             <div class="card">
               <div class="card-body">
                 
                     <table>
                         <tr>
-                            <td><button type="button" class="btn btn-success">Add</button></td> 
-                            <td><button type="button" class="btn btn-primary">Updae</button></td> 
-                            <td><button type="button" class="btn btn-Danger">Delete</button></td> 
-                            <td><button type="button" class="btn btn-Warning">Clear</button></td> 
+                            <td><button type="button" class="btn btn-success mb-2">Add</button></td> 
+                            <td><button type="button" class="btn btn-primary mb-2">Updae</button></td> 
+                            <td><button type="button" class="btn btn-secondary mb-2">Delete</button></td> 
+                            <td><button type="button" class="btn btn-info mb-2">Clear</button></td> 
                         </tr>
                     </table>
                     <table>
@@ -235,25 +235,26 @@
                                 <option value="3"> Hold</option>
                               </select>
                             </td> 
-                            </tr>
-                            <tr>
-                                <td>Entered By</td>
-                                <td><input type="text" value="{{old('enteredBy')}}"  class="form-control" placeholder="Mother's Name" name="enteredBy" id="enteredBy"></td>
-                            </tr>
-                            <tr>
-                                <td>Mother's Name</td>
-                                <td><input type="text" value="{{old('updatedBy')}}"  class="form-control primary" placeholder="Mother's Name" name="updatedBy" id="updatedBy"></td>
-                            </tr>
+                        </tr>
+                        <tr>
+                            <td>Entered By</td>
+                            <td><input type="text" value="{{old('enteredBy')}}"  class="form-control" placeholder="Mother's Name" name="enteredBy" id="enteredBy"></td>
+                        </tr>
+                        <tr>
+                            <td>Mother's Name</td>
+                            <td><input type="text" value="{{old('updatedBy')}}"  class="form-control primary" placeholder="Mother's Name" name="updatedBy" id="updatedBy"></td>
+                        </tr>
                      
                     </table>
+                    
               </div>
+                    
             </div>
-          </div>
+              
+        </div>
+            
     </div>
-                
-                
-                
-              </div>
+          
             </div>
 
             
