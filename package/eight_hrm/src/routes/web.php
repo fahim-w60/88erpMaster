@@ -11,6 +11,8 @@ use Innovation\EightHrm\Http\Controllers\attendance\RosterGroupUpdateController;
 
 
 use Innovation\EightHrm\Http\Controllers\employee\EmployeeInfoController;
+use Innovation\EightHrm\Http\Controllers\e_recruitment\InterviewController;
+use Innovation\EightHrm\Http\Controllers\e_recruitment\InterviewEvaluationController;
 
 Route::group(['prefix' => 'hrm'], function () {
     Route::get('dashboard', [HrmDashBoardController::class,'index'])->name('hrm-dashboard');
@@ -27,6 +29,9 @@ Route::group(['prefix' => 'hrm'], function () {
     Route::get('job-card', [AttendanceReportController::class, 'job_card'])->name('attendance.job_card');
     Route::get('punch-record', [AttendanceReportController::class, 'punch_record'])->name('attendance.punch_record');
     Route::resource('employee', EmployeeInfoController::class);
+    // E-Recruitment
+    Route::resource('interview', InterviewController::class);
+    Route::resource('interview-evaluation', InterviewController::class);
 
 
     /*Leave Management URLS*/

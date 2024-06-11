@@ -1,6 +1,6 @@
 <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
-      <a href="{{url('/')}}" class="navbar-brand">
+      <a href="{{url('/home')}}" class="navbar-brand">
 
         <img src="{{ asset('/logo/logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-bold">Saif Erp</span>
@@ -18,7 +18,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">Home</a>
+            <a href="{{url('/hrm/dashboard')}}" class="nav-link">Dashboard</a>
           </li>
           
           <li class="nav-item dropdown">
