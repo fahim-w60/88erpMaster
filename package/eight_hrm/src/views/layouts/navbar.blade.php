@@ -1,6 +1,6 @@
 <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
-      <a href="{{url('/')}}" class="navbar-brand">
+      <a href="{{url('/home')}}" class="navbar-brand">
 
         <img src="{{ asset('/logo/logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-bold">Saif Erp</span>
@@ -18,7 +18,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">Home</a>
+            <a href="{{url('/hrm/dashboard')}}" class="nav-link">Dashboard</a>
           </li>
           
           <li class="nav-item dropdown">
@@ -56,9 +56,7 @@
               <li class="dropdown-submenu dropdown-hover">
                 <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Attendance Setup</a>
                 <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Blank</a>
-                  </li>
+                  
 
                   {{-- <!-- Level three dropdown-->
                   <li class="dropdown-submenu">
@@ -70,10 +68,14 @@
                   </li>
                   <!-- End Level three --> --}}
 
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
-                  <li><a href="#" class="dropdown-item">Blank</a></li>
+                  <li><a href="{{route('attendance.attendance_lock')}}" class="dropdown-item">Monthly Attendance Lock</a></li>
+                  <li><a href="{{route('attendance.attendance_unlock')}}" class="dropdown-item">Monthly Attendance Unlock</a></li>
+                  <li><a href="{{route('attendance.shift_time_setting')}}" class="dropdown-item">Shift Time Setting</a></li>
+                  <li><a href="{{route('attendance.employee_wise_time_setting')}}" class="dropdown-item">Employee Wise Time Setting</a></li>
+                  <li><a href="{{route('attendance.roaster_sheet_generate')}}" class="dropdown-item">Roaster Sheet Generate Process</a></li>
+                  <li><a href="{{route('attendance.group_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Group</a></li>
+                  <li><a href="{{route('attendance.employee_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Employee</a></li>
+                  <li><a href="{{route('attendance.roster_excel_upload')}}" class="dropdown-item">Roaster Upload From Excel</a></li>
                 </ul>
               </li>
 
@@ -124,10 +126,10 @@
                 <a id="dropdownSubMenu2" href="#" class="dropdown-item">Requisition</a>
               </li>
               <li class="">
-                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Interview</a>
+                <a id="dropdownSubMenu2" href="{{ route('interview.index') }}" class="dropdown-item">Interview</a>
               </li>
               <li class="">
-                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Evaluation</a>
+                <a id="dropdownSubMenu2" href="{{ route('interview-evaluation.index') }}" class="dropdown-item">Evaluation</a>
               </li>
             </ul>
           </li>

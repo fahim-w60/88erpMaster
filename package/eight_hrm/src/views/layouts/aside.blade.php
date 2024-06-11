@@ -155,27 +155,51 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../examples/login-v2.html" class="nav-link">
+                    <a href="{{route('attendance.attendance_lock')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>blank</p>
+                      <p>Monthly Attendance Lock</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/register-v2.html" class="nav-link">
+                    <a href="{{route('attendance.attendance_unlock')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
+                      <p>Monthly Attendance Unlock</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/forgot-password-v2.html" class="nav-link">
+                    <a href="{{route('attendance.shift_time_setting')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
+                      <p>Shift Time Setting</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/recover-password-v2.html" class="nav-link">
+                    <a href="{{route('attendance.employee_wise_time_setting')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
+                      <p>Employee Wise Time Settings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.roaster_sheet_generate')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Roaster Sheet Generate Process</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.group_roaster_sheet_modify')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Roster Sheet Modify By Group</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.employee_roaster_sheet_modify')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Roster Sheet Modify By Employee</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.roster_excel_upload')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Roster Upload From Excel</p>
                     </a>
                   </li>
                 </ul>
