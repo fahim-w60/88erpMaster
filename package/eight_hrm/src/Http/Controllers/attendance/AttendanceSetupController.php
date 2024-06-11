@@ -2,10 +2,10 @@
 
 namespace Innovation\EightHrm\Http\Controllers\attendance;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class AttendanceReportController extends Controller
+class AttendanceSetupController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AttendanceReportController extends Controller
      */
     public function index()
     {
-        
+        //
     }
 
     /**
@@ -82,26 +82,36 @@ class AttendanceReportController extends Controller
     {
         //
     }
-
-    public function daily_attendance()
+    public function attendance_lock()
     {
-        return view('eight_hrm::attendance.attendance-reports.daily-attendance');
+        return view('eight_hrm::attendance.attendance-setup.monthly_attendance_lock');
     }
-    public function monthly_attendance()
+    public function attendance_unlock()
     {
-        return view('eight_hrm::attendance.attendance-reports.monthly_attendance');
+        return view('eight_hrm::attendance.attendance-setup.monthly_attendance_unlock');
     }
-    public function summary_attendance()
+    public function shift_time_setting()
     {
-        return view('eight_hrm::attendance.attendance-reports.summary_attendance');
+        return view('eight_hrm::attendance.attendance-setup.shift_time_setting');
     }
-    public function job_card()
+    public function employee_wise_time_setting()
     {
-        return view('eight_hrm::attendance.attendance-reports.job_card');
+        return view('eight_hrm::attendance.attendance-setup.employee_wise_time_setting');
     }
-    public function punch_record()
+    public function roaster_sheet_generate()
     {
-        return view('eight_hrm::attendance.attendance-reports.punch_record');
+        return view('eight_hrm::attendance.attendance-setup.roaster_sheet_generate_process');
     }
-
+    public function group_roaster_sheet_modify()
+    {
+        return view('eight_hrm::attendance.attendance-setup.group_roaster_sheet_modify');
+    }
+    public function employee_roaster_sheet_modify()
+    {
+        return view('eight_hrm::attendance.attendance-setup.employee_roaster_sheet_modify');
+    }
+    public function roster_excel_upload()
+    {
+        return view('eight_hrm::attendance.attendance-setup.roster_excel_upload');
+    }
 }
