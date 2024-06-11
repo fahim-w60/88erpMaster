@@ -103,4 +103,12 @@ class AttendanceReportController extends Controller
     {
         return view('eight_hrm::attendance.attendance-reports.punch_record');
     }
+    public function attendance_lock()
+    {
+        return view('eight_hrm::attendance.attendance-setup.monthly_attendance_lock');
+    }
+    public function attendance_unlock()
+    {
+        return view('eight_hrm::attendance.attendance-setup.monthly_attendance_unlock');
+    }
 }

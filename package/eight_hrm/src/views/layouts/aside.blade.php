@@ -154,15 +154,15 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../examples/login-v2.html" class="nav-link">
+                    <a href="{{route('attendance.attendance_lock')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>blank</p>
+                      <p>Monthly Attendance Lock</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/register-v2.html" class="nav-link">
+                    <a href="{{route('attendance.attendance_unlock')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
+                      <p>Monthly Attendance Unlock</p>
                     </a>
                   </li>
                   <li class="nav-item">
