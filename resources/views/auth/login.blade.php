@@ -1,103 +1,79 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{$logo->title ?? '' }}</title>
-<link rel="icon" type="image/x-icon" href="{{url('/')}}/{{ $settings->logo ?? '' }}">
-<style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ $settings->title ?? '' }} | Log in</title>
 
-form {border: 3px solid #f1f1f1;
-    box-shadow: 2px 2px 2px 2px #413c69;
-    padding: 5px;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  color: white;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-}
-
-img.avatar {
-  width: 70px;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="{{asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
 </head>
-<body>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="{{url('/')}}" class="h1"><b>{{ $settings->title ?? '' }}</b></a>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+      @include('backend.message.message')
 
+      <form method="POST" action="{!!  route('login')  !!}">
+      @csrf
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" name="email" valeu="{{old('name')}}" placeholder=" {!!  __('E-Mail Address')  !!}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" name="password" placeholder="{!!  __('Password')  !!}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
 
-<div style="width: 320px;
-    margin: 0px auto;
-    margin-top: 10vh;
-    border-radius: 10px;
-    background-color: #ffffff;
-    ">
-   
-    <h2 style="text-align:center">{{ $settings->title ?? '' }}</h2>
-<form method="POST" action="{!!  route('login')  !!}">
-                        @csrf
-  <div class="imgcontainer">
-    <a href="{{url('/')}}">
-        <img src="{{ $settings->logo ?? '' }}" alt="Avatar" class="avatar">
-    </a>
+      
+    </div>
+    <!-- /.card-body -->
   </div>
- @include('backend.message.message')
-  <div class="container">
-    <label for="email"><b> {!!  __('E-Mail Address')  !!}</b></label>
-    <input type="text" placeholder="Enter email/ User name" name="email" required value="{!! old('email') !!}">
-
-    <label for="password"><b>{!!  __('Password')  !!}</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-        
-    <button type="submit"><img src="https://img.icons8.com/ios-filled/50/000000/login-rounded-right.png"/></i>
- </button>
-    
-  </div>
-
-</form>
+  <!-- /.card -->
 </div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
 </body>
 </html>
+

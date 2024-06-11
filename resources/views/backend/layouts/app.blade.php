@@ -29,7 +29,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
 <link rel="stylesheet" href="{{asset('backend/amsify.suggestags.css')}}">
-<link rel="stylesheet" href="{{asset('backend/style.css?v=1.555')}}">
+<link rel="stylesheet" href="{{asset('backend/style.css')}}">
 <link rel="stylesheet" type="text/css" href="{{ asset('plugins/toaster/toastr.css') }}" >
 
 
@@ -114,7 +114,7 @@ $currentURL = URL::full();
   <div class="ajax_loader"><h5 class="loading_text">Loading.....</span></div>
     <div id="_notify_message_box"></div>
   <!-- Navbar -->
-  @include('backend.layouts.coel_nav')
+  @include('backend.layouts.navbar')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
@@ -124,15 +124,7 @@ $currentURL = URL::full();
   <div class="content-wrapper" style="min-height: 100vh;">
     <input type="hidden" class="project_base_url" id="project_base_url" value="{{url('/')}}">
     <input type="hidden" class="default_date_formate" id="default_date_formate" value="{{default_date_formate()}}">
-    <!--   <h5 style='text-align:center;color:#000;padding-top:10px;'>
-    <?php
-   // $auth_user = \Auth::user();
- //$permited_stores = permited_stores(explode(',',$auth_user->store_ids));
- //if(sizeof($permited_stores)==1){
-  //foreach($permited_stores as $pkey=>$sval){ ?>
- <small>You are working on</small> <span style="font-weight: bold;color:#d61212">{{$sval->_name ?? ''}}</span> 
-<?php //} } ?>
-</h5> -->
+   
 
     <!-- Main content -->
     @yield('content')
