@@ -78,6 +78,32 @@
               </li>
             </ul>
           </li>
+          <!-----Payroll----->
+          <li class="nav-item dropdown">
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Payroll Management</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+              <!-- Level two dropdown-->
+              <li class="">
+                <a id="dropdownSubMenu2" href="{{ route('employee.index') }}" class="dropdown-item">Employee Info</a>
+              </li>
+            </ul>
+          </li>
+          <!-----E-recruitment----->
+          <li class="nav-item dropdown">
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">E-Recruitment</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+              <!-- Level two dropdown-->
+              <li class="">
+                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Requisition</a>
+              </li>
+              <li class="">
+                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Interview</a>
+              </li>
+              <li class="">
+                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Evaluation</a>
+              </li>
+            </ul>
+          </li>
         </ul>
 
         <!-- SEARCH FORM -->
