@@ -26,9 +26,7 @@ Route::group(['prefix' => 'hrm'], function () {
     Route::resource('employee', EmployeeInfoController::class);
 
 
-    /*Leave Management URLS*/
-    Route::resource('admin-leave-entry', AdminLeaveEntryController::class);
-    Route::resource('roster-group-update', RosterGroupUpdateController::class);
+  
  
 });
 

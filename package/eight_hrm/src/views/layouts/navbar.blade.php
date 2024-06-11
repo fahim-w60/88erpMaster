@@ -76,6 +76,33 @@
                   <li><a href="#" class="dropdown-item">Blank</a></li>
                 </ul>
               </li>
+
+               <!-- Level two dropdown-->
+              <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Attendance Entry</a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="{{route('attendance.daily_attendance')}}" class="dropdown-item">Roster Group Update</a>
+                  </li>
+
+                  {{-- <!-- Level three dropdown-->
+                  <li class="dropdown-submenu">
+                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                      <li><a href="#" class="dropdown-item">3rd level</a></li>
+                      <li><a href="#" class="dropdown-item">3rd level</a></li>
+                    </ul>
+                  </li>
+                  <!-- End Level three --> --}}
+
+                  <li><a href="{{route('attendance.monthly_attendance')}}" class="dropdown-item">Daily Attendance Modify By Admin</a></li>
+                  <li><a href="{{route('attendance.summary_attendance')}}" class="dropdown-item">Employee Wise Attendance Modify By Admin</a></li>
+                  <li><a href="{{route('attendance.job_card')}}" class="dropdown-item">Attendance Process</a></li>
+                  <li><a href="{{route('attendance.punch_record')}}" class="dropdown-item">Over Time Recommend</a></li>
+                  <li><a href="{{route('attendance.punch_record')}}" class="dropdown-item">Over Time Approve</a></li>
+                </ul>
+
+              </li>
             </ul>
           </li>
           <!-----Payroll----->
