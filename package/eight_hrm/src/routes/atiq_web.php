@@ -10,6 +10,6 @@ Route::group(['prefix' => 'hrm'], function () {
    Route::resource('employee', EmployeeInfoController::class);
     // E-Recruitment
     Route::resource('interview', InterviewController::class);
-    Route::resource('interview-evaluation', InterviewController::class);
+    Route::resource('interview-evaluation', InterviewEvaluationController::class);
  
 });

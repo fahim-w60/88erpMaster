@@ -97,10 +97,10 @@
                 <a id="dropdownSubMenu2" href="#" class="dropdown-item">Requisition</a>
               </li>
               <li class="">
-                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Interview</a>
+                <a id="dropdownSubMenu2" href="{{ route('interview.index') }}" class="dropdown-item">Interview</a>
               </li>
               <li class="">
-                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Evaluation</a>
+                <a id="dropdownSubMenu2" href="{{ route('interview-evaluation.index') }}" class="dropdown-item">Evaluation</a>
               </li>
             </ul>
           </li>

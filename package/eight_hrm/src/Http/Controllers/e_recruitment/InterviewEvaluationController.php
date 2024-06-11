@@ -14,7 +14,7 @@ class InterviewEvaluationController extends Controller
      */
     public function index()
     {
-        //
+        return view('eight_hrm::e-recruitment.interview-evaluation.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class InterviewEvaluationController extends Controller
      */
     public function create()
     {
-        //
+        return view('eight_hrm::e-recruitment.interview-evaluation.create');
     }
 
     /**
