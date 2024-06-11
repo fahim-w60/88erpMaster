@@ -857,11 +857,6 @@ input[type='text']{
 
 
 
-.breadcrumb-item.active {
-    color: #6c757d;
-    padding-top: 5px;
-}
-
 .barcode_width{
   max-width: 300px;
   word-break: break-all;
