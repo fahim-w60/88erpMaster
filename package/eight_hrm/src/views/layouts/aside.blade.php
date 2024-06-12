@@ -202,8 +202,15 @@
                       <p>Roster Upload From Excel</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.movement_approve_byAdmin')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Movement Approve By Admin</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
+              
               
               {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">

@@ -76,6 +76,7 @@
                   <li><a href="{{route('attendance.group_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Group</a></li>
                   <li><a href="{{route('attendance.employee_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Employee</a></li>
                   <li><a href="{{route('attendance.roster_excel_upload')}}" class="dropdown-item">Roaster Upload From Excel</a></li>
+                  <li><a href="{{route('attendance.movement_approve_byAdmin')}}" class="dropdown-item">Movement Approve By Admin</a></li>
                 </ul>
               </li>
             </ul>
