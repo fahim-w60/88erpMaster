@@ -8,8 +8,7 @@ use Innovation\EightHrm\Http\Controllers\attendance\AttendanceReportController;
 
 use Innovation\EightHrm\Http\Controllers\Leave\AdminLeaveEntryController;
 use Innovation\EightHrm\Http\Controllers\attendance\RosterGroupUpdateController; 
-
-
+use Innovation\EightHrm\Http\Controllers\employee\EmployeeInfoController;
 
 
 Route::group(['prefix' => 'hrm'], function () {
@@ -22,9 +21,7 @@ Route::group(['prefix' => 'hrm'], function () {
 
 
 
-    /*Leave Management URLS*/
-    Route::resource('admin-leave-entry', AdminLeaveEntryController::class);
-    Route::resource('roster-group-update', RosterGroupUpdateController::class);
+  
  
 });
 

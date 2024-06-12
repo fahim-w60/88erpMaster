@@ -15,8 +15,10 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('home')}}">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Layout</a></li>
-              <li class="breadcrumb-item active">Top Navigation</li>
+              <li class="breadcrumb-item"><a href="#">Attendance Manager</a></li>
+              <li class="breadcrumb-item"><a href="#">Attendance Entry</a></li>
+              <li class="breadcrumb-item"><a href="#">Roster Group Update</a></li>
+              
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -28,16 +30,16 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-6 col-md-12">
-            <div class="card">
+          {{-- <div class=" col-md-12"> --}}
+            <div class="card col-5">
               <div class="card-body">
                 
-                    <table>
+                    <table >
                         <tr>
                             <td><button type="button" class="btn btn-success mb-2">Add</button></td> 
                             <td><button type="button" class="btn btn-primary mb-2">Updae</button></td> 
-                            <td><button type="button" class="btn btn-secondary mb-2">Delete</button></td> 
-                            <td><button type="button" class="btn btn-info mb-2">Clear</button></td> 
+                            <td><button type="button" class="btn btn-danger mb-2">Delete</button></td> 
+                            <td><button type="button" class="btn btn-warning mb-2">Clear</button></td> 
                         </tr>
                     </table>
                     <table>
@@ -238,11 +240,11 @@
                         </tr>
                         <tr>
                             <td>Entered By</td>
-                            <td><input type="text" value="{{old('enteredBy')}}"  class="form-control" placeholder="Mother's Name" name="enteredBy" id="enteredBy"></td>
+                            <td><input type="text" value="{{old('enteredBy')}}"  class="form-control" placeholder="" name="enteredBy" id="enteredBy"></td>
                         </tr>
                         <tr>
-                            <td>Mother's Name</td>
-                            <td><input type="text" value="{{old('updatedBy')}}"  class="form-control primary" placeholder="Mother's Name" name="updatedBy" id="updatedBy"></td>
+                            <td>Updated By</td>
+                            <td><input type="text" value="{{old('updatedBy')}}"  class="form-control primary" placeholder="" name="updatedBy" id="updatedBy"></td>
                         </tr>
                      
                     </table>
@@ -250,8 +252,99 @@
               </div>
                     
             </div>
+            
+                <div class="card col-7">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center h-25 ">
+                        <img src="{{ asset('/logo/logo.png')}}" class="">
+                    </div>
+                    <div class="row">
+                      
+                        <input class="form-control col-md-10 m-2" placeholder="Search for Employee">
+                        <button class="btn btn-sm w-2 bg-info">Search</button>
+                      
+                    </div>
+                    <table class=" justify-content-center  table-sm table-bordered">
+                        <thead>
+                        <tr class="bg-dark">
+                            <th  scope="col">Select</th>
+                            <th scope="col">Employee ID </th>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Shift</th>
+                            <th scope="col">Roster Group</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+                        <tr class="">
+                            <td><button class="btn btn-info btn-sm">Select</button></td>
+                            <td scope="col">IEL-000000 </td>
+                            <td scope="col">John Smith</td>
+                            <td scope="col">Programmer</td>
+                            <td scope="col">General</td>
+                            <td scope="col">G</td>
+                            <td scope="col">Active</td>
+                        </tr>
+
+                        </thead>
+                    </table>
+                  </div>
+                </div>
               
-        </div>
+        {{-- </div> --}}
             
     </div>
           
