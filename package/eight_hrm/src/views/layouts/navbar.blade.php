@@ -76,6 +76,7 @@
                   <li><a href="{{route('attendance.group_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Group</a></li>
                   <li><a href="{{route('attendance.employee_roaster_sheet_modify')}}" class="dropdown-item">Roaster Sheet Modify By Employee</a></li>
                   <li><a href="{{route('attendance.roster_excel_upload')}}" class="dropdown-item">Roaster Upload From Excel</a></li>
+                  <li><a href="{{route('attendance.movement_approve_byAdmin')}}" class="dropdown-item">Movement Approve By Admin</a></li>
                 </ul>
               </li>
 
@@ -107,6 +108,60 @@
               </li>
             </ul>
           </li>
+
+          {{-- System Adminstration --}}
+          <li class="nav-item dropdown">
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">System Adminstration</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+             
+
+             
+              <!-- Level two dropdown-->
+              <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">User Settings
+                </a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item">Backup Database In (URL)</a>
+                  </li>
+
+                  {{-- <!-- Level three dropdown-->
+                  <li class="dropdown-submenu">
+                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                      <li><a href="#" class="dropdown-item">3rd level</a></li>
+                      <li><a href="#" class="dropdown-item">3rd level</a></li>
+                    </ul>
+                  </li>
+                  <!-- End Level three --> --}}
+
+                  <li><a href="" class="dropdown-item">Code Setup</a></li>
+                  <li><a href="" class="dropdown-item">Code Type Setup</a></li>
+                  <li><a href="" class="dropdown-item">Employee Entry</a></li>
+                  <li><a href="" class="dropdown-item">Customer Entry</a></li>
+                  <li><a href="" class="dropdown-item">Supplier Entry</a></li>
+                  <li><a href="" class="dropdown-item">Item Master Entry</a></li>
+                  <li><a href="" class="dropdown-item">Calender Process</a></li>
+                  <li><a href="" class="dropdown-item">Calender Edit</a></li>
+                  <li><a href="" class="dropdown-item">Calender Edit For Event</a></li>
+                  <li><a href="" class="dropdown-item">Event Calender Entry</a></li>
+                  <li><a href="" class="dropdown-item">Location Wise Holiday Setup</a></li>
+                  <li><a href="" class="dropdown-item">Currency Entry</a></li>
+                  <li><a href="" class="dropdown-item">Month Wise Holiday Setup</a></li>
+                  <li><a href="" class="dropdown-item">Todays Salat Time And Holy Quran Translation</a></li>
+                  <li><a href="" class="dropdown-item">Staff Change Password</a></li>
+                  <li><a href="" class="dropdown-item">Staff Change Password By Employee Range</a></li>
+                </ul>
+              </li>
+              <!-- End Level two -->
+
+            
+             
+            </ul>
+          </li>
+
+
+
           <!-----Payroll----->
           <li class="nav-item dropdown">
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Payroll Management</a>

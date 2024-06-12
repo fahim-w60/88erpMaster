@@ -32,6 +32,7 @@ Route::group(['prefix' => 'hrm'], function () {
     Route::get('group-roaster-sheet-modify', [AttendanceSetupController::class, 'group_roaster_sheet_modify'])->name('attendance.group_roaster_sheet_modify');
     Route::get('employee-roaster-sheet-modify', [AttendanceSetupController::class, 'employee_roaster_sheet_modify'])->name('attendance.employee_roaster_sheet_modify');
     Route::get('roster-excel-upload', [AttendanceSetupController::class, 'roster_excel_upload'])->name('attendance.roster_excel_upload');
+    Route::get('movement-approve-byAdmin', [AttendanceSetupController::class, 'movement_approve_byAdmin'])->name('attendance.movement_approve_byAdmin');
 });
 
 
