@@ -17,7 +17,7 @@ class attendanceModifyAdminController extends Controller
         public function index()
         {
             //
-            return view('eight_hrm::attendance.attendance-reports.dailyAttendanceModifyAdmin');
+            return view('eight_hrm::attendance.attendance-entry.dailyAttendanceModifyAdmin');
         }
     
         /**
