@@ -5,9 +5,7 @@
 @section('content')
     <!-- Content Wrapper. Contains page content -->
   <style>
-    .table td, .table th{
-      padding: 3px !important;
-    }
+    
   </style>
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -152,88 +150,88 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-4" style="">Criteria</div> 
+                        <div class="col-md-6" style="">Criteria</div> 
                         <div class="col-md-4" style="">Comments</div> 
-                        <div class="col-md-4" style="">Rating</div> 
+                        <div class="col-md-2" style="">Rating</div> 
                     </div>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>01. Education<br><small>(Does candidate's educational qualification or trainings received meet the requirement for the position)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="education_remarks" /></div> 
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="4" name="education" /></div>  
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="4" name="education" /></div>  
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>02. Experience<br><small>(Does the candidate have minimum and relevant working experience?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="5" name="experience" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="5" name="experience" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>03. Presentation<br><small>(Was the candidate well aware for self presentation in the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="presentation" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="presentation" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>04. Knowledge of Company and Position<br><small>(Did the candidate research about the organization and the position prior to the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="know_com_pos" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="know_com_pos" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>05. Communication<br><small>(How were the candidate's communication skills during the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="communication" /></div>  
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="communication" /></div>  
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>06. Attitude & Body Language<br><small>(Did the candidate demonstrate positive attitude and body language during the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="attitude" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="attitude" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>07. Teamwork<br><small>(Did the candidate possess the willingness to work in teams?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="teamwork" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="teamwork" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>08. Leadership<br><small>(Did the candidate demonstrate the ability to lead a team?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="leadership" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="leadership" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>09. Technical Know-how<br><small>(Does the candidate possess proper understanding of the industry and work segment where s/he currently is?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="technical_know" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="technical_know" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>10. Willingness to take on challenges and changes<br><small>(Did the candidate demonstrate his/her willingness to take on new challenges and accept change?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="willingness" /></div>  
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="willingness" /></div>  
                     </div>
                     <hr>
                     <div class="row"> 
@@ -305,88 +303,88 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-4" style="">Criteria</div> 
+                        <div class="col-md-6" style="">Criteria</div> 
                         <div class="col-md-4" style="">Comments</div> 
-                        <div class="col-md-4" style="">Rating</div> 
+                        <div class="col-md-2" style="">Rating</div> 
                     </div>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>01. Education<br><small>(Does candidate's educational qualification or trainings received meet the requirement for the position)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="education_remarks" /></div> 
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="4" name="education" /></div>  
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="4" name="education" /></div>  
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>02. Experience<br><small>(Does the candidate have minimum and relevant working experience?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="5" name="experience" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="5" name="experience" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>03. Presentation<br><small>(Was the candidate well aware for self presentation in the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="presentation" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="presentation" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>04. Knowledge of Company and Position<br><small>(Did the candidate research about the organization and the position prior to the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="know_com_pos" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="know_com_pos" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>05. Communication<br><small>(How were the candidate's communication skills during the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="communication" /></div>  
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="communication" /></div>  
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>06. Attitude & Body Language<br><small>(Did the candidate demonstrate positive attitude and body language during the interview?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="attitude" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="attitude" /></div> 
                     </div>
                     <hr>
                     <div class="row" >
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>07. Teamwork<br><small>(Did the candidate possess the willingness to work in teams?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="teamwork" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="teamwork" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>08. Leadership<br><small>(Did the candidate demonstrate the ability to lead a team?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="leadership" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="leadership" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>09. Technical Know-how<br><small>(Does the candidate possess proper understanding of the industry and work segment where s/he currently is?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="technical_know" /></div> 
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="technical_know" /></div> 
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-4" style="">
+                        <div class="col-md-6" style="">
                             <span>10. Willingness to take on challenges and changes<br><small>(Did the candidate demonstrate his/her willingness to take on new challenges and accept change?)</small></span>
                         </div>  
                         <div class="col-md-4" style=""><input type="text" class="form-control" value="" name="" /></div>  
-                        <div class="col-md-4" style=""><input type="text" class="form-control" value="0" name="willingness" /></div>  
+                        <div class="col-md-2" style=""><input type="text" class="form-control" value="0" name="willingness" /></div>  
                     </div>
                     <hr>
                     <div class="row" >  
