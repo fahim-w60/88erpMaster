@@ -1,12 +1,12 @@
 <?php
 
-namespace Innovation\EightHrm\Http\Controllers\attendance;
-
+namespace Innovation\EightHrm\Http\Controllers\System_Administration\Super_Administrator_Settings;
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
 
-class RosterGroupUpdateController extends Controller
+
+
+class UserProfileEntryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class RosterGroupUpdateController extends Controller
     public function index()
     {
         //
-        return view('eight_hrm::attendance.attendance-entry.RosterGroupUp');
+        return view('eight_hrm::system-administration.super-administrator-settings.userProfileEntry');
     }
 
     /**

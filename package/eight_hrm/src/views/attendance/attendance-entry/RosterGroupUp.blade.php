@@ -255,6 +255,15 @@
             
                 <div class="card col-7">
                   <div class="card-body">
+                    <div class="row justify-content-end p-2">
+                      <div class="form-check md-2">
+                          <input class="form-check-input  " type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label text-danger m-2s" for="flexCheckDefault">
+                            Create Roster Group
+                          </label>
+                        </div>
+                    </div>
+                    
                     <div class="d-flex justify-content-center h-25 ">
                         <img src="{{ asset('/logo/logo.png')}}" class="">
                     </div>

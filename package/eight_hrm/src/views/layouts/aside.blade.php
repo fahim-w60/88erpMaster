@@ -226,11 +226,30 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/forgot-password-v2.html" class="nav-link">
+                    <a href="{{route('empl-atten-mod-admin.index')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
+                      <p>Employee Wise Attendance Modify By Admin</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Attendance Process</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Recommend</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Approve</p>
+                    </a>
+                  </li>
+                  s
               {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
