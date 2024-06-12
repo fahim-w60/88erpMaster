@@ -202,35 +202,15 @@
                       <p>Roster Upload From Excel</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.movement_approve_byAdmin')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Movement Approve By Admin</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Attendance Entry
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Roster Group Update</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="{{route('attendance-modify-admin.index')}}" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Daily Attendance Modify By Admin</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../examples/forgot-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
-                    </a>
-                  </li>
+              
               {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
