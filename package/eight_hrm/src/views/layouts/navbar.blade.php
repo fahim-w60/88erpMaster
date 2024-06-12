@@ -123,7 +123,7 @@
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
               <!-- Level two dropdown-->
               <li class="">
-                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Requisition</a>
+                <a id="dropdownSubMenu2" href="{{ route('recruitment-requisition.index') }}" class="dropdown-item">Requisition</a>
               </li>
               <li class="">
                 <a id="dropdownSubMenu2" href="{{ route('interview.index') }}" class="dropdown-item">Interview</a>
