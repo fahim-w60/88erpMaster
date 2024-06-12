@@ -93,7 +93,8 @@
           </li> --}}
           
          
-        
+
+          
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
@@ -202,8 +203,15 @@
                       <p>Roster Upload From Excel</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.movement_approve_byAdmin')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Movement Approve By Admin</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
+<<<<<<< HEAD
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -226,11 +234,33 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/forgot-password-v2.html" class="nav-link">
+                    <a href="{{route('empl-atten-mod-admin.index')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Blank</p>
+                      <p>Employee Wise Attendance Modify By Admin</p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Attendance Process</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Recommend</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Approve</p>
+                    </a>
+                  </li>
+                  s
+=======
+              
+>>>>>>> 61197293bb3a9ca75fbb5036e2ff95854bcb1d16
               {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

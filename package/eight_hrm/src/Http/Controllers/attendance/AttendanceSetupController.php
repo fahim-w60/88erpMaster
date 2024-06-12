@@ -114,4 +114,8 @@ class AttendanceSetupController extends Controller
     {
         return view('eight_hrm::attendance.attendance-setup.roster_excel_upload');
     }
+    public function movement_approve_byAdmin()
+    {
+        return view('eight_hrm::attendance.attendance-setup.movement_approve_byAdmin');
+    }
 }

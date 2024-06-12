@@ -15,7 +15,7 @@ class EmplAttenModAdminController extends Controller
         public function index()
         {
             //
-            return view('eight_hrm::attendance.attendance-reports.employee_atten_mod_admin');
+            return view('eight_hrm::attendance.attendance-entry.employee_atten_mod_admin');
         }
     
         /**

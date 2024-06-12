@@ -1,12 +1,10 @@
 <?php
-
-namespace Innovation\EightHrm\Http\Controllers\attendance;
+namespace Innovation\EightHrm\Http\Controllers\e_recruitment;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
 
-class RosterGroupUpdateController extends Controller
+class RecruitmentRequisitionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,7 @@ class RosterGroupUpdateController extends Controller
      */
     public function index()
     {
-        //
-        return view('eight_hrm::attendance.attendance-entry.RosterGroupUp');
+         return view('eight_hrm::e-recruitment.requisition.index');
     }
 
     /**
@@ -26,8 +23,7 @@ class RosterGroupUpdateController extends Controller
      */
     public function create()
     {
-        //
-        
+         return view('eight_hrm::e-recruitment.requisition.create');
     }
 
     /**

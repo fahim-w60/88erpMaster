@@ -26,11 +26,19 @@
 
     <!-- Main content -->
     <div class="content">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
             <div class="card shadow">
               <div class="card-body ">
+                <div class="row justify-content-end p-2">
+                  <div class="form-check md-2">
+                      <input class="form-check-input  " type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label text-danger m-2s" for="flexCheckDefault">
+                        Date Wise Attendance Update
+                      </label>
+                    </div>
+                </div>
               	 
                 <table class="table table-border table-sm">
                     <tr class="bg-info  form-contrl ">
@@ -93,7 +101,7 @@
                             <td class="from-contrl" scope="col">G</td>
                             <td class="from-contrl" scope="col">P</td>
                             
-                            <td><select class="form-select form-control" aria-label="Default select example" name="selectStatus" id="selectStatus">
+                            <td><select class="form-select form-control width_150_px" aria-label="Default select example" name="selectStatus" id="selectStatus">
                                 <option selected>Select Status</option>
                                 <option value="1"> A </option>
                                 <option value="2"> CML</option>
