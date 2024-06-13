@@ -6,6 +6,8 @@ use Innovation\EightHrm\Http\Controllers\HrmDashBoardController;
 use Innovation\EightHrm\Http\Controllers\UserReportController;
 use Innovation\EightHrm\Http\Controllers\attendance\AttendanceReportController;
 use Innovation\EightHrm\Http\Controllers\attendance\AttendanceSetupController;
+use Innovation\EightHrm\Http\Controllers\system_adminstration\user_settings\UserSettingsController;
+
 
 
 Route::group(['prefix' => 'hrm'], function () {
@@ -33,6 +35,12 @@ Route::group(['prefix' => 'hrm'], function () {
     Route::get('employee-roaster-sheet-modify', [AttendanceSetupController::class, 'employee_roaster_sheet_modify'])->name('attendance.employee_roaster_sheet_modify');
     Route::get('roster-excel-upload', [AttendanceSetupController::class, 'roster_excel_upload'])->name('attendance.roster_excel_upload');
     Route::get('movement-approve-byAdmin', [AttendanceSetupController::class, 'movement_approve_byAdmin'])->name('attendance.movement_approve_byAdmin');
+
+    //user settings controller 
+    Route::get('backup-database-url', [UserSettingsController::class, 'backup_database_url'])->name('user_settings.backup_database_url');
+    Route::get('code-setup', [UserSettingsController::class, 'code_setup'])->name('user_settings.code_setup');
+    Route::get('code-type-setup', [UserSettingsController::class, 'code_type_setup'])->name('user_settings.code_type_setup');
+
 });
 
 

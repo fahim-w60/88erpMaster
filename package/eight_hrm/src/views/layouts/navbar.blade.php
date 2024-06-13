@@ -122,7 +122,7 @@
                 </a>
                 <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
                   <li>
-                    <a tabindex="-1" href="" class="dropdown-item">Backup Database In (URL)</a>
+                    <a tabindex="-1" href="{{route('user_settings.backup_database_url')}}" class="dropdown-item">Backup Database In (URL)</a>
                   </li>
 
                   {{-- <!-- Level three dropdown-->
@@ -135,8 +135,8 @@
                   </li>
                   <!-- End Level three --> --}}
 
-                  <li><a href="" class="dropdown-item">Code Setup</a></li>
-                  <li><a href="" class="dropdown-item">Code Type Setup</a></li>
+                  <li><a href="{{route('user_settings.code_setup')}}" class="dropdown-item">Code Setup</a></li>
+                  <li><a href="{{route('user_settings.code_type_setup')}}" class="dropdown-item">Code Type Setup</a></li>
                   <li><a href="" class="dropdown-item">Employee Entry</a></li>
                   <li><a href="" class="dropdown-item">Customer Entry</a></li>
                   <li><a href="" class="dropdown-item">Supplier Entry</a></li>
