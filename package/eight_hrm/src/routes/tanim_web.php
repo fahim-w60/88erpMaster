@@ -38,8 +38,8 @@ Route::group(['prefix' => 'hrm'], function () {
 
     //user settings controller 
     Route::get('backup-database-url', [UserSettingsController::class, 'backup_database_url'])->name('user_settings.backup_database_url');
-    Route::get('code-setup', [UserSettingsController::class, 'code_setup'])->name('user_settings.code_setup');
-    Route::get('code-type-setup', [UserSettingsController::class, 'code_type_setup'])->name('user_settings.code_type_setup');
+    //Route::get('code-setup', [UserSettingsController::class, 'code_setup'])->name('user_settings.code_setup');
+   // Route::get('code-type-setup', [UserSettingsController::class, 'code_type_setup'])->name('user_settings.code_type_setup');
 
 });
 

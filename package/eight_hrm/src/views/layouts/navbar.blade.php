@@ -135,8 +135,8 @@
                   </li>
                   <!-- End Level three --> --}}
 
-                  <li><a href="{{route('user_settings.code_setup')}}" class="dropdown-item">Code Setup</a></li>
-                  <li><a href="{{route('user_settings.code_type_setup')}}" class="dropdown-item">Code Type Setup</a></li>
+                  <li><a href="{{url('hrm/sys_code')}}" class="dropdown-item">Code Setup</a></li>
+                  <li><a href="{{url('hrm/sys_code_type')}}" class="dropdown-item">Code Type Setup</a></li>
                   <li><a href="" class="dropdown-item">Employee Entry</a></li>
                   <li><a href="" class="dropdown-item">Customer Entry</a></li>
                   <li><a href="" class="dropdown-item">Supplier Entry</a></li>
