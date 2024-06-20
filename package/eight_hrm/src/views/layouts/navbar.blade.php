@@ -211,6 +211,11 @@
                   <li>
                     <a tabindex="-1" href="#" class="dropdown-item">CV Short Listing</a>
                   </li>
+
+                  <li>
+                    <a tabindex="-1" href="{{ route('candidates.index') }}" class="dropdown-item">Candidates</a>
+                  </li>
+
                   <li>
                     <a tabindex="-1" href="#" class="dropdown-item">Interview Preparation</a>
                   </li>
