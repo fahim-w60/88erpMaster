@@ -122,7 +122,7 @@
                 </a>
                 <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
                   <li>
-                    <a tabindex="-1" href="" class="dropdown-item">Backup Database In (URL)</a>
+                    <a tabindex="-1" href="{{route('user_settings.backup_database_url')}}" class="dropdown-item">Backup Database In (URL)</a>
                   </li>
 
                   {{-- <!-- Level three dropdown-->
@@ -135,8 +135,8 @@
                   </li>
                   <!-- End Level three --> --}}
 
-                  <li><a href="" class="dropdown-item">Code Setup</a></li>
-                  <li><a href="" class="dropdown-item">Code Type Setup</a></li>
+                  <li><a href="{{url('hrm/sys_code')}}" class="dropdown-item">Code Setup</a></li>
+                  <li><a href="{{url('hrm/sys_code_type')}}" class="dropdown-item">Code Type Setup</a></li>
                   <li><a href="" class="dropdown-item">Employee Entry</a></li>
                   <li><a href="" class="dropdown-item">Customer Entry</a></li>
                   <li><a href="" class="dropdown-item">Supplier Entry</a></li>
@@ -176,16 +176,78 @@
           <li class="nav-item dropdown">
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">E-Recruitment</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+              
               <!-- Level two dropdown-->
-              <li class="">
-                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Requisition</a>
+              <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Requisition
+                </a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="{{ route('recruitment-requisition.index') }}" class="dropdown-item">Request For Requisition</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Approved By Department Head</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Approved By HR Head</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Approved By BOD</a>
+                  </li>
+                </ul>
               </li>
-              <li class="">
-                <a id="dropdownSubMenu2" href="{{ route('interview.index') }}" class="dropdown-item">Interview</a>
+              <!-- End Level two -->
+              <!-- Level two dropdown-->
+              <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Process
+                </a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="{{ route('recruitment-requisition.index') }}" class="dropdown-item">Circulation/Promotion</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Screening</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">CV Short Listing</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Interview Preparation</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="{{ route('interview.index') }}" class="dropdown-item">Interview</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="{{ route('interview-evaluation.index') }}" class="dropdown-item">Candidate Selection/Evaluation</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Candidate Approved By Head</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Candidate Approved By BOD</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Candidate Appointment</a>
+                  </li>
+                </ul>
               </li>
+              <!-- End Level two -->
+
+              <!-- Level one dropdown-->
               <li class="">
-                <a id="dropdownSubMenu2" href="{{ route('interview-evaluation.index') }}" class="dropdown-item">Evaluation</a>
+                <a id="dropdownSubMenu2" href="#" class="dropdown-item">Recruitment Reports</a>
               </li>
+              <!-- Level two dropdown-->
+              <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Setup
+                </a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">CV Entry</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- End Level two -->
             </ul>
           </li>
         </ul>

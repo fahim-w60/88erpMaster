@@ -16,6 +16,7 @@ class HrmServiceProvider extends ServiceProvider
 		$this->loadRoutesFrom(__DIR__.'/routes/tanim_web.php');
 		$this->loadViewsFrom(__DIR__.'/views', 'eight_hrm');
 		$this->loadMigrationsFrom(__DIR__.'/database/migrations');
+		$this->loadMigrationsFrom(__DIR__.'/database/seeders');
 		 $this->mergeConfigFrom(__DIR__.'/config/inno_contact.php', 'eight_hrm');
 
 		 $this->publishes([__DIR__.'/config/inno_contact.php' => config_path('inno_contact.php'),]);
