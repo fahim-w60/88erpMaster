@@ -14,6 +14,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('vendor/eight_hrm/dist/css/adminlte.min.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="{{ asset('vendor/eight_hrm/css/style.css?v=1.00')}}">
 </head>
 <body class="hold-transition sidebar-collapse layout-top-nav">
 <div class="wrapper">
