@@ -116,8 +116,9 @@ class SysCodeTypeController extends Controller
      * @param  \App\Models\SysCodeType  $sysCodeType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SysCodeType $sysCodeType)
+    public function destroy($id)
     {
         //
+        return $id;
     }
 }
