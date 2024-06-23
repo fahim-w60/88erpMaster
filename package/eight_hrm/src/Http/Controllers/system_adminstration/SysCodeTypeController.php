@@ -5,9 +5,18 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Innovation\EightHrm\Models\system_adminstration\SysCode;
 use Innovation\EightHrm\Models\system_adminstration\SysCodeType;
+use Illuminate\Support\Facades\Auth;
 
 class SysCodeTypeController extends Controller
 {
+
+    protected $auth;
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->auth = app('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -16,10 +25,17 @@ class SysCodeTypeController extends Controller
     public function index()
     {
         //Fetch SQL OLD data Insert Into PG DB
+        if (Auth::check()) {
+            // User is authenticated
+            $datas = SysCodeType::orderBy('type','ASC')->get();
+            return view('eight_hrm::system_adminstration.sys_code_type.index',compact('datas'));
+        } else {
+            // User is not authenticated
+            return redirect()->route('login');
+        }
 
        // code_type_sql_to_pg();
-        $datas = SysCodeType::orderBy('type','ASC')->get();
-        return view('eight_hrm::system_adminstration.sys_code_type.index',compact('datas'));
+        
     }
 
     /**
@@ -40,7 +56,24 @@ class SysCodeTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //return $request->all();
+         $request->validate([
+            'id' => 'required',
+            'type' => 'required|string',
+        ]);
+        $auth_user = Auth::user();
+
+        $data = SysCodeType::find($request->id);
+        if(empty($data)){
+            $data = new SysCodeType();
+        }
+        $data->type=$request->type;
+        $data->company_id=$request->company_id ?? 1;
+        $data->remarks = $request->remarks ?? '';
+        $data->created_by = $auth_user->id;
+        $data->save();
+        return redirect()->back()->with('message','Information Save Successfully');
+
     }
 
     /**
@@ -83,8 +116,9 @@ class SysCodeTypeController extends Controller
      * @param  \App\Models\SysCodeType  $sysCodeType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SysCodeType $sysCodeType)
+    public function destroy($id)
     {
         //
+        return $id;
     }
 }
