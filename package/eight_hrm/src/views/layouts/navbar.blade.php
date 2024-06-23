@@ -155,10 +155,60 @@
               </li>
               <!-- End Level two -->
 
-            
+            <!-- Level two dropdown-->
+          <li class="dropdown-submenu dropdown-hover">
+            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Super Administration Settings
+            </a>
+            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+              
+
+              {{-- <!-- Level three dropdown-->
+              <li class="dropdown-submenu">
+                <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                </ul>
+              </li>
+              <!-- End Level three --> --}}
+
+              <li><a href="{{url('hrm/inactive-user-process')}}" class="dropdown-item">Inactive User Process</a></li>
+              <li><a href="{{url('hrm/user-code-permission')}}" class="dropdown-item">User Wise Code Permission</a></li>
+              <li><a href="{{url('hrm/user-code-te')}}" class="dropdown-item">User Wise Code Type Entry</a></li>
+              <li><a href="{{url('hrm/user-profile-entry')}}" class="dropdown-item">User Profile Entry</a></li>
+            </ul>
+          </li>
+          <!-- End Level two -->
+          <!-- Level two dropdown-->
+          <li class="dropdown-submenu dropdown-hover">
+            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Administration Settings
+            </a>
+            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+              
+
+              {{-- <!-- Level three dropdown-->
+              <li class="dropdown-submenu">
+                <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                </ul>
+              </li>
+              <!-- End Level three --> --}}
+
+              <li><a href="{{url('hrm/group-entry')}}" class="dropdown-item">Group Entry</a></li>
+            </ul>
+          </li>
+          <!-- End Level two -->
+
+        
+         
+        </ul>
+      </li>
              
             </ul>
           </li>
+          
 
 
 

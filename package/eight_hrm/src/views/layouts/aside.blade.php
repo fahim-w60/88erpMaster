@@ -394,7 +394,57 @@
                           <p>Over Time Approve</p>
                         </a>
                       </li>
-                  s
+                  
+                      <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Attendance Management
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Attendance Reports
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{ route('attendance.daily_attendance') }}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daily Attendance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.monthly_attendance')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Monthly Attendance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.summary_attendance')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Summary Attendance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.job_card')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Job Card</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.punch_record')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Employee punch record and movement Reg</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
               {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
@@ -446,8 +496,57 @@
               </li> --}}
             </ul>
           </li>
-         
-         
+         <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                System Administration
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Attendance Reports
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{ route('attendance.daily_attendance') }}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daily Attendance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.monthly_attendance')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Monthly Attendance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.summary_attendance')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Summary Attendance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.job_card')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Job Card</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance.punch_record')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Employee punch record and movement Reg</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
