@@ -211,7 +211,7 @@
                   </li>
                 </ul>
               </li>
-<<<<<<< HEAD
+
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -257,10 +257,145 @@
                       <p>Over Time Approve</p>
                     </a>
                   </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Attendance Entry
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Roster Group Update</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance-modify-admin.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daily Attendance Modify By Admin</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('empl-atten-mod-admin.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Employee Wise Attendance Modify By Admin</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Attendance Process</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Recommend</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Approve</p>
+                    </a>
+                  </li><li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Attendance Entry
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Roster Group Update</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('attendance-modify-admin.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daily Attendance Modify By Admin</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('empl-atten-mod-admin.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Employee Wise Attendance Modify By Admin</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Attendance Process</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Recommend</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Over Time Approve</p>
+                    </a>
+                  </li>
+
+
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>
+                        Syestem 
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Roster Group Update</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('attendance-modify-admin.index')}}" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Daily Attendance Modify By Admin</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('empl-atten-mod-admin.index')}}" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Employee Wise Attendance Modify By Admin</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Attendance Process</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Over Time Recommend</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('roster-group-update.index')}}" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Over Time Approve</p>
+                        </a>
+                      </li>
                   s
-=======
-              
->>>>>>> 61197293bb3a9ca75fbb5036e2ff95854bcb1d16
+
               {{-- <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
